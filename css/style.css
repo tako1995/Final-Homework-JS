@@ -1,0 +1,302 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    border: 10px solid red;
+    /* background-color: rgb(2,3,129); */
+    background-image: url(../images/maxresdefault.jpg);
+
+}
+
+
+/* main_header */
+
+.main_header {
+    max-width: inherit;
+    width: inherit;
+    padding: 26px 3%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    /* backdrop-filter: blur (5px); */
+    /* position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+/* left_side */
+
+.fa-bars {
+    /* display: none; */
+    color: #FFF;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fa-xmark {
+    display: none;
+    color: #FFF;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+
+
+.main_header_ul {
+
+    display: flex;
+    column-gap: 30PX;
+
+}
+
+.main_header_li,
+.main_header_li_active,
+.main_header_artworks_li_active,
+.main_header_contact_li_active {
+
+    color: #FFA2F3;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+
+
+}
+
+
+
+.main_header_li:hover,
+.main_header_right_side_button:hover,
+.shopping_button:hover {
+    color: #f1bede;
+   
+}
+
+
+
+.main_header_li_active,
+.main_header_artworks_li_active,
+.main_header_contact_li_active {
+    color: #D5906E;
+
+}
+
+.header_logo {
+    height: 60px;
+    width: 30%;
+    /* background-color: #402101; */
+}
+
+
+
+
+
+/* right_side */
+
+.main_header_right_side {
+
+
+
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+
+
+
+
+}
+
+.main_header_right_side_button {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+
+
+}
+
+.shopping_button {
+    color: white;
+    border: none;
+
+
+}
+
+
+/* slider */
+
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+   
+}
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-wraper {
+    position: relative;
+}
+.arrow-left {
+    left: 30px;
+}
+.arrow-right {
+    right: 30px;
+}
+
+/* dots styles */
+.dots-Wraper {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+.dot-item {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+.bg-image {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* footer */
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 100px;
+    background-color: #402101;
+
+}
+
+.footer_title_div {
+    width: 31.5%;
+
+
+}
+
+.footer_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.footer_title_div_1 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.footer_title_div_2 {
+    color: #D5906E;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.footer_title_div_1:hover,
+.footer_title_div_2:hover {
+
+    font-size: 42px;
+
+
+}
+
+
+.footer_left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.footer_right_side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+
+
+
+}
+
+
+
+.footer_left_side_p:hover,
+.fa-phone:hover,
+.fa-envelope:hover,
+.fa-location-dot:hover,
+.footer_contact_style_div:hover,
+.footer_contact_style:hover {
+    color: orange;
+}
+
+
+.footer_contact_style {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer_socialmedia {
+    display: flex;
+    gap: 30px;
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./index.html">
+
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- form -->
+    
+<section>
+    <form action="" id="resgitration" method="POST">
+      <div>
+        <input
+          type="text"
+          name="username"
+          placeholder="eneter your username"
+          id="usernamefield"
+        />
+        <p class="error-text" id="error-username"></p>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="passw"
+          placeholder="eneter your password"
+          id="passwordfield"
+        />
+        <i class="fa-regular fa-eye" id="showIcon"></i>
+        <p class="error-text" id="error-passw"></p>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="passw2"
+          placeholder="repeat your password"
+          id="passwordfield2"
+        />
+        <p class="error-text" id="error-passw2"></p>
+      </div>
+      <div>
+        <input type="email" id="emailfield" placeholder="enter email" />
+        <p id="emailError"></p>
+      </div>
+      <div>
+        <input type="radio" name="gender" />
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <p class="error-text" id="error-gender"></p>
+      </div>
+      <div>
+        <input type="checkbox" id="agree" name="check" />
+        <label for="agree">i agree terms and conditions</label>
+        <p class="error-text" id="error-check"></p>
+      </div>
+     <a href="index.html">
+        <button type="submit">submit</button>
+     </a>
+    </form>
+  </section>
+
+
+ <script src="./js/form.js"></script>
+</body>
+</html>
