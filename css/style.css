@@ -3,86 +3,130 @@
     width: 100%;
     margin: auto;
     border: 10px solid red;
-    /* background-color: rgb(2,3,129); */
-    background-image: url(../images/maxresdefault.jpg);
-
+    background-color: black;
+    background-image: url(../https://wi.wallpapertip.com/wsimgs/66-662287_coldplay-melodie-noua-aprilie-2014-a-sky-full.jpg);
+    /* position: relative; */
 }
-
 
 /* main_header */
 
 .main_header {
     max-width: inherit;
     width: inherit;
-    padding: 26px 3%;
+    padding: 10px 3%;
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     align-items: center;
     /* backdrop-filter: blur (5px); */
-    /* position: fixed;
-    top: 0;
+/* position: fixed; */
+    /* top: 0;
     left: 50%;
     transform: translateX(-50%); */
+    /* position: relative; */
+
+  
 }
 
 /* left_side */
 
-.fa-bars {
-    /* display: none; */
-    color: #FFF;
-    font-size: 28px;
-    cursor: pointer;
-}
+/* burger-menubar */
 
-.fa-xmark {
+.burger {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
     display: none;
-    color: #FFF;
-    font-size: 28px;
-    cursor: pointer;
-
 }
 
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: all;
+    transition: 0.3s ease-in-out;
+}
 
+.line1 {
+    top: 30%;
+}
+
+.line3 {
+    top: 70%;
+}
+
+.activeBurger .line1 {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.activeBurger .line2 {
+    display: none;
+}
+
+.activeBurger .line3 {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+    .main_header_nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* .main_header {
+        flex-direction: column;
+    } */
+    .main_header_ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation.navActive {
+        display: block;
+    }
+}
 
 .main_header_ul {
-
     display: flex;
-    column-gap: 30PX;
-
+    column-gap: 30px;
+    display: none;
 }
 
 .main_header_li,
 .main_header_li_active,
 .main_header_artworks_li_active,
 .main_header_contact_li_active {
-
-    color: #FFA2F3;
-    font-family: 'Inter', sans-serif;
+    color: #ffa2f3;
+    font-family: "Inter", sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-   
-
-
 }
-
-
 
 .main_header_li:hover,
 .main_header_right_side_button:hover,
 .shopping_button:hover {
     color: #f1bede;
-   
 }
-
-
 
 .main_header_li_active,
 .main_header_artworks_li_active,
 .main_header_contact_li_active {
-    color: #D5906E;
-
+    color: #d5906e;
 }
 
 .header_logo {
@@ -91,52 +135,80 @@
     /* background-color: #402101; */
 }
 
+.log_button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 700;
+    margin: 0 10px;
+    width: 80px;
+    padding: 10px 0;
+    transition: 0.4s;
+}
 
+.reg {
+    color: white;
+    background-color: #5d12a3;
+}
 
+.log {
+    color: #5d12a3;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
+}
 
+.log_button:hover {
+    color: white;
+    background-color: #5d12a3;
+}
 
 /* right_side */
 
 .main_header_right_side {
-
-
-
     display: flex;
     column-gap: 16px;
     align-items: center;
-
-
-
-
 }
 
 .main_header_right_side_button {
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     border: none;
     background: transparent;
-
-
 }
 
 .shopping_button {
     color: white;
     border: none;
-
-
 }
 
+
+.just-pic{
+    background-image: url("https://64.media.tumblr.com/63ff496bd4820050ed4d00832c84b126/tumblr_nxeqpgsxpt1tq40eco1_1280.gif");
+    width: 100%;
+    height: 500px;
+  object-fit: cover;
+  
+}
 
 /* slider */
 
-img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-
-   
+.slider-section{
+margin-top: 80px;
 }
+
+img {
+    margin-top: 60px;
+    width: 100%;
+    height: 650px;
+    object-position: center;
+    object-fit: cover;
+    
+
+    
+}
+
 .arrow {
     width: 50px;
     height: 50px;
@@ -146,12 +218,15 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .slider-wraper {
     position: relative;
 }
+
 .arrow-left {
     left: 30px;
 }
+
 .arrow-right {
     right: 30px;
 }
@@ -164,6 +239,7 @@ img {
     bottom: 50px;
     transform: translateX(-50%);
 }
+
 .dot-item {
     width: 15px;
     height: 15px;
@@ -173,10 +249,6 @@ img {
     cursor: pointer;
 }
 
-
-
-
-
 .bg-image {
     width: 100%;
     height: 600px;
@@ -184,96 +256,72 @@ img {
     background-size: cover;
 }
 
-
 /* footer */
 
 .footer {
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px 100px;
-    background-color: #402101;
-
 }
 
 .footer_title_div {
     width: 31.5%;
-
-
 }
 
 .footer_title {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 .footer_title_div_1 {
-    color: #FFF;
-    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
 .footer_title_div_2 {
-    color: #D5906E;
-    font-family: 'Inter', sans-serif;
+    color: #d5906e;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-
 .footer_title_div_1:hover,
 .footer_title_div_2:hover {
-
     font-size: 42px;
-
-
 }
-
 
 .footer_left_side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    color: #FFF;
-    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-
-
 
 .footer_right_side {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    color: #FFF;
-    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-
-
-
-
 }
-
-
 
 .footer_left_side_p:hover,
 .fa-phone:hover,
@@ -284,9 +332,8 @@ img {
     color: orange;
 }
 
-
 .footer_contact_style {
-    color: #FFF;
+    color: #fff;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
@@ -299,4 +346,99 @@ img {
     gap: 30px;
     width: 24px;
     height: 24px;
+}
+
+/* form styles */
+
+.form_section {
+    background-image: url("https://wallpapers.com/images/hd/coldplay-ghost-stories-globe-cover-r91rgzv3z7yipm8d.jpg");
+
+    position: relative;
+
+    height: 750.7px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formSectionDiv {
+    backdrop-filter: blur(10px);
+    color: #b182ab;
+    border: 2px solid rgb(78, 101, 111);
+    border-radius: 20px;
+    width: 30%;
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.formH2 {
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 100px;
+    margin-bottom: 10px;
+    
+}
+
+.formH3 {
+    font-size: 25px;
+    line-height: 30px;
+    
+
+}
+
+.form_registration {
+    border: 2px solid rgb(78, 101, 111);
+    width: 30%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    
+}
+
+.textInput {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    background-color: transparent;
+
+    border: none;
+    border: 2px solid rgb(78, 101, 111);
+}
+
+::placeholder {
+    color: #b182ab;
+}
+
+.formStyle {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+    color: #b182ab;
+    margin: 15px;
+}
+
+.submitbBTN {
+    cursor: pointer;
+    border: none;
+    border: 5px solid rgb(78, 101, 111);
+    border-radius: 30px;
+    font-weight: 700;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #492945;
+    position: relative;
+}
+
+.submitbBTN:hover{
+  transform: scale(1.25);
+  overflow: hidden;
 }

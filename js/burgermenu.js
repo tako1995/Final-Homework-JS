@@ -1,6 +1,2 @@
-let navigationElement = document.getElementById("navBar");
-let burgerElement = document.getElementById("burgerBar");
+"use strict"
 
-burgerElement.addEventListener("click", function () {
-  navigationElement.classList.toggle("navActive");
-});

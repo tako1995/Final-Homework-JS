@@ -15,19 +15,29 @@
     
 <!-- form -->
     
-<section>
-    <form action="" id="resgitration" method="POST">
-      <div>
+<section class="form_section">
+  <div class="formSectionDiv">
+    <h2 class="formH2">
+      SIGN UP
+    </h2>
+    <h3 class="formH3">
+      Keep up to date with all the latest Coldplay news, gigs and releases with our newsletter, the Coldplay Messenger. Sign up and we'll be in touch.
+    </h3>
+  </div>
+    <form class="form_registration" action="" id="resgitration" method="POST">
+      <div class="formStyle">
         <input
+        class="textInput"
           type="text"
           name="username"
-          placeholder="eneter your username"
+          placeholder ="eneter your username"
           id="usernamefield"
         />
         <p class="error-text" id="error-username"></p>
       </div>
-      <div>
+      <div  class="formStyle">
         <input
+        class="textInput"
           type="password"
           name="passw"
           placeholder="eneter your password"
@@ -36,8 +46,9 @@
         <i class="fa-regular fa-eye" id="showIcon"></i>
         <p class="error-text" id="error-passw"></p>
       </div>
-      <div>
+      <div class="formStyle">
         <input
+        class="textInput"
           type="password"
           name="passw2"
           placeholder="repeat your password"
@@ -45,29 +56,37 @@
         />
         <p class="error-text" id="error-passw2"></p>
       </div>
-      <div>
-        <input type="email" id="emailfield" placeholder="enter email" />
+      <div  class="formStyle">
+        <input 
+        class="textInput"
+        type="email" id="emailfield" placeholder="enter email" />
         <p id="emailError"></p>
       </div>
-      <div>
+      <div class="formStyle">
         <input type="radio" name="gender" />
         <label for="">Male</label>
         <input type="radio" name="gender" />
         <label for="">Female</label>
         <p class="error-text" id="error-gender"></p>
       </div>
-      <div>
-        <input type="checkbox" id="agree" name="check" />
-        <label for="agree">i agree terms and conditions</label>
+      <div class="formStyle">
+        <input 
+        class="signINPUT" type="checkbox" 
+        id="agree" 
+        name="check" />
+        <label  class="signlabel"
+        for="agree">i agree terms and conditions</label>
         <p class="error-text" id="error-check"></p>
       </div>
      <a href="index.html">
-        <button type="submit">submit</button>
+       <a href="index.html"> <button class="submitbBTN" type="submit">submit</button></a>
      </a>
     </form>
   </section>
 
 
  <script src="./js/form.js"></script>
+ <script src="./js/script.js"></script>
+ 
 </body>
 </html>
