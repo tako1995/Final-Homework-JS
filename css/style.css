@@ -195,7 +195,7 @@
 /* slider */
 
 .slider-section{
-margin-top: 80px;
+margin-top: 20px;
 }
 
 img {
@@ -256,6 +256,12 @@ img {
     background-size: cover;
 }
 
+.coldplayPIC{
+    width: 500px;
+    height: 400px;
+    margin-left: 10px;
+}
+
 /* footer */
 
 .footer {
@@ -267,6 +273,7 @@ img {
 
 .footer_title_div {
     width: 31.5%;
+    
 }
 
 .footer_title {
