@@ -1,30 +1,30 @@
 .container {
-    max-width: 1920px;
-    width: 100%;
-    margin: auto;
-    border: 10px solid red;
-    background-color: black;
-    background-image: url(../https://wi.wallpapertip.com/wsimgs/66-662287_coldplay-melodie-noua-aprilie-2014-a-sky-full.jpg);
-    /* position: relative; */
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  border: 10px solid red;
+  background-image: url("https://i.pinimg.com/originals/48/06/44/480644f775b73df64030458f5c04bf49.png");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* main_header */
 
 .main_header {
-    max-width: inherit;
-    width: inherit;
-    padding: 10px 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* backdrop-filter: blur (5px); */
-/* position: fixed; */
-    /* top: 0;
+  max-width: inherit;
+  width: inherit;
+  padding: 10px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* backdrop-filter: blur (5px); */
+  /* position: fixed; */
+  /* top: 0;
     left: 50%;
     transform: translateX(-50%); */
-    /* position: relative; */
-
-  
+  /* position: relative; */
 }
 
 /* left_side */
@@ -32,302 +32,265 @@
 /* burger-menubar */
 
 .burger {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: white;
-    font-size: 20px;
-    border: 2px solid red;
-    width: 60px;
-    height: 60px;
-    display: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-size: 20px;
+  border: 2px solid red;
+  width: 60px;
+  height: 60px;
+  display: none;
 }
 
 .line {
-    width: 90%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-property: all;
-    transition: 0.3s ease-in-out;
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: all;
+  transition: 0.3s ease-in-out;
 }
 
 .line1 {
-    top: 30%;
+  top: 30%;
 }
 
 .line3 {
-    top: 70%;
+  top: 70%;
 }
 
 .activeBurger .line1 {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .activeBurger .line2 {
-    display: none;
+  display: none;
 }
 
 .activeBurger .line3 {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media (max-width: 480px) {
-    .main_header_nav {
-        display: none;
-    }
+  .main_header_nav {
+    display: none;
+  }
 
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
 
-    /* .main_header {
+  /* .main_header {
         flex-direction: column;
     } */
-    .main_header_ul {
-        flex-direction: column;
-        align-items: center;
-    }
+  .main_header_ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .navigation.navActive {
-        display: block;
-    }
+  .navigation.navActive {
+    display: block;
+  }
 }
 
 .main_header_ul {
-    display: flex;
-    column-gap: 30px;
-    display: none;
-}
-
-.main_header_li,
-.main_header_li_active,
-.main_header_artworks_li_active,
-.main_header_contact_li_active {
-    color: #ffa2f3;
-    font-family: "Inter", sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.main_header_li:hover,
-.main_header_right_side_button:hover,
-.shopping_button:hover {
-    color: #f1bede;
-}
-
-.main_header_li_active,
-.main_header_artworks_li_active,
-.main_header_contact_li_active {
-    color: #d5906e;
+  display: flex;
+  column-gap: 30px;
+  display: none;
 }
 
 .header_logo {
-    height: 60px;
-    width: 30%;
-    /* background-color: #402101; */
+  height: 60px;
+  width: 30%;
+  /* background-color: #402101; */
 }
 
 .log_button {
-    cursor: pointer;
-    border: 0;
-    border-radius: 30px;
-    font-weight: 700;
-    margin: 0 10px;
-    width: 80px;
-    padding: 10px 0;
-    transition: 0.4s;
+  cursor: pointer;
+  border: 0;
+  border-radius: 30px;
+  font-weight: 700;
+  margin: 0 10px;
+  width: 80px;
+  padding: 10px 0;
+  transition: 0.4s;
 }
 
 .reg {
-    color: white;
-    background-color: #5d12a3;
+  color: white;
+  background-color: #5d12a3;
 }
 
 .log {
-    color: #5d12a3;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(104, 85, 224, 1);
+  color: #5d12a3;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(104, 85, 224, 1);
 }
 
 .log_button:hover {
-    color: white;
-    background-color: #5d12a3;
+  color: white;
+  background-color: #5d12a3;
 }
 
 /* right_side */
 
 .main_header_right_side {
-    display: flex;
-    column-gap: 16px;
-    align-items: center;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
 }
 
 .main_header_right_side_button {
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: none;
-    background: transparent;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border: none;
+  background: transparent;
 }
 
 .shopping_button {
-    color: white;
-    border: none;
-}
-
-
-.just-pic{
-    background-image: url("https://64.media.tumblr.com/63ff496bd4820050ed4d00832c84b126/tumblr_nxeqpgsxpt1tq40eco1_1280.gif");
-    width: 100%;
-    height: 500px;
-  object-fit: cover;
-  
+  color: white;
+  border: none;
 }
 
 /* slider */
 
-.slider-section{
-margin-top: 20px;
+.slider-section {
+  margin-top: 20px;
 }
 
 img {
-    margin-top: 60px;
-    width: 100%;
-    height: 650px;
-    object-position: center;
-    object-fit: cover;
-    
-
-    
+  margin-top: 60px;
+  width: 100%;
+  height: 650px;
+  object-position: center;
+  object-fit: cover;
 }
 
 .arrow {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 35px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slider-wraper {
-    position: relative;
+  position: relative;
 }
 
 .arrow-left {
-    left: 30px;
+  left: 30px;
 }
 
 .arrow-right {
-    right: 30px;
+  right: 30px;
 }
 
 /* dots styles */
 .dots-Wraper {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translateX(-50%);
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
 }
 
 .dot-item {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .bg-image {
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.coldplayPIC{
-    width: 500px;
-    height: 400px;
-    margin-left: 10px;
+.coldplayPIC {
+  width: 500px;
+  height: 400px;
+  margin-left: 10px;
 }
 
 /* footer */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 100px;
 }
 
 .footer_title_div {
-    width: 31.5%;
-    
+  width: 31.5%;
 }
 
 .footer_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer_title_div_1 {
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .footer_title_div_2 {
-    color: #d5906e;
-    font-family: "Inter", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #d5906e;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer_title_div_1:hover,
 .footer_title_div_2:hover {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .footer_left_side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer_right_side {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer_left_side_p:hover,
@@ -336,116 +299,379 @@ img {
 .fa-location-dot:hover,
 .footer_contact_style_div:hover,
 .footer_contact_style:hover {
-    color: orange;
+  color: orange;
 }
 
 .footer_contact_style {
-    color: #fff;
-    font-family: Rubik;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .footer_socialmedia {
-    display: flex;
-    gap: 30px;
-    width: 24px;
-    height: 24px;
+  display: flex;
+  gap: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 /* form styles */
 
 .form_section {
-    background-image: url("https://wallpapers.com/images/hd/coldplay-ghost-stories-globe-cover-r91rgzv3z7yipm8d.jpg");
+  background-image: url("https://wallpapers.com/images/hd/coldplay-ghost-stories-globe-cover-r91rgzv3z7yipm8d.jpg");
 
-    position: relative;
+  position: relative;
 
-    height: 750.7px;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 750.7px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formSectionDiv {
-    backdrop-filter: blur(10px);
-    color: #b182ab;
-    border: 2px solid rgb(78, 101, 111);
-    border-radius: 20px;
-    width: 30%;
-    margin: 20px 0 40px 0;
-    text-align: center;
+  backdrop-filter: blur(10px);
+  color: #b182ab;
+  border: 2px solid rgb(78, 101, 111);
+  border-radius: 20px;
+  width: 30%;
+  margin: 20px 0 40px 0;
+  text-align: center;
 }
 
 .formH2 {
-    font-size: 100px;
-    font-weight: normal;
-    line-height: 100px;
-    margin-bottom: 10px;
-    
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 100px;
+  margin-bottom: 10px;
 }
 
 .formH3 {
-    font-size: 25px;
-    line-height: 30px;
-    
-
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .form_registration {
-    border: 2px solid rgb(78, 101, 111);
-    width: 30%;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    
+  border: 2px solid rgb(78, 101, 111);
+  width: 30%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 .textInput {
-    width: 100%;
-    text-align: center;
-    height: 50px;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0;
-    font-weight: 400;
-    background-color: transparent;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  background-color: transparent;
 
-    border: none;
-    border: 2px solid rgb(78, 101, 111);
+  border: none;
+  border: 2px solid rgb(78, 101, 111);
 }
 
 ::placeholder {
-    color: #b182ab;
+  color: #b182ab;
 }
 
 .formStyle {
-    font-size: 1rem;
-    line-height: 2.5rem;
-    letter-spacing: 0;
-    font-weight: 400;
-    backdrop-filter: blur(10px);
-    color: #b182ab;
-    margin: 15px;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
+  color: #b182ab;
+  margin: 15px;
 }
 
 .submitbBTN {
-    cursor: pointer;
-    border: none;
-    border: 5px solid rgb(78, 101, 111);
-    border-radius: 30px;
-    font-weight: 700;
-    margin: 0 10px;
-    width: 100px;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    color: #492945;
-    position: relative;
+  cursor: pointer;
+  border: none;
+  border: 5px solid rgb(78, 101, 111);
+  border-radius: 30px;
+  font-weight: 700;
+  margin: 0 10px;
+  width: 100px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #492945;
+  position: relative;
 }
 
-.submitbBTN:hover{
+.submitbBTN:hover {
   transform: scale(1.25);
   overflow: hidden;
+}
+
+/* albums */
+
+.homepage_latest_products_section_div {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 1%;
+    background-color: #ecd1b5;
+
+}
+
+.homepage_latest_products_p {
+    color: #402101;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 100px;
+
+}
+
+.homepage_latest_products_images_div {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+
+}
+
+
+.latest_products_div1 {
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2016/04/upup-1.jpg");
+}
+
+.latest_products_div2 {
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2015/11/art_everyteardropisawaterfall.jpg");
+}
+
+.latest_products_div3 {
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2015/11/art_lost.jpg");
+}
+
+.latest_products_div4 {
+    background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2015/11/art_vivalavida.jpg");
+}
+
+.latest_products_div1,
+.latest_products_div2,
+.latest_products_div3,
+.latest_products_div4 {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 315px;
+    height: 260px;
+    display: flex;
+    align-items: end;
+    transition: all 0.1s linear;
+}
+
+.latest_products_div1:hover,
+.latest_products_div2:hover,
+.latest_products_div3:hover,
+.latest_products_div4:hover,
+.homepage_latest_products_p:hover,
+.button_fa-angles-left:hover,
+.button_fa-angles-right:hover {
+    box-shadow: 10px 10px 5px brown;
+    transform: scale(1.1);
+}
+
+
+
+.latest_products_p_cost {
+    color: #B53B1B;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    padding: 15px 17px 14px 17px;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 20px;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.button_fa-angles-left,
+.button_fa-angles-right {
+    width: 44px;
+    height: 44px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #B53B1B;
+}
+
+.button_viewmore {
+    
+    padding: 15px 32px 14px 31px;
+    border-radius: 10px;
+    background: #B53B1B;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-top: 30px;
+    
+    
+}
+
+
+/* word tour */
+
+.WORLD_TOUR_section {
+
+  
+  row-gap: 50px;
+  background-color: #78aea9;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  margin: 200px auto;
+  border-radius: 20px;
+  backdrop-filter: blur (10px);
+  width: 80%;
+}
+
+.WORLD_TOUR_h2 {
+  position: relative;
+  text-align: center;
+  color: #c393b9;
+  font-size: 100px;
+}
+
+.tour_btn {
+  width: fit-content;
+  margin: 3rem auto 1rem;
+  border: 0.1rem solid #7a5ccc;
+  border-radius: 1rem;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.tour_btn:hover {
+  border: #ffa2f3;
+}
+
+.tour_countries {
+  font-size: 1.4rem;
+  padding: 0.5rem 2.5rem;
+  margin: 0 0.5rem 1rem 0;
+  border: 0.1rem solid #7a5ccc;
+  border-radius: 1.4rem;
+}
+
+.storeSection {
+}
+
+.storeSectionH2 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  align-items: center;
+  color: #492945;
+  margin-bottom: 20px;
+}
+
+.storeSectionDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.artworks_cards_figure1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  background-color: #78aea9;
+  width: 35%;
+}
+
+.artworks_cards_img {
+  width: 400px;
+  height: 400px;
+}
+
+.artworks_cards_text {
+  color: #b53b1b;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0;
+}
+
+.artworks_cards_div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5d12a3;
+  width: 100%;
+}
+
+.artworks_cards_p {
+  color: #402101;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fa-cart-plus {
+  color: #402101;
+  font-size: 24px;
+}
+
+.artworks_cards_button {
+  border: none;
+  background-color: transparent;
+  color: #402101;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.storeBTN {
+  border: none;
+  background-color: #5d12a3;
+  color: white;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  width: 20%;
+  margin-top: 15px;
+}
+
+.btnDiv {
+  background-color: #ffa2f3;
+  display: flex;
+  justify-content: center;
 }
