@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="musicpage.css">
     <title>Document</title>
 </head>
 <body>
+
+    <section>
+
+        <div class="filter-container">
+            <h2>User filter</h2>
+            <input type="text" name="userfilter" id="filterinput" />
+          </div>
+    
+
+        <div id="api-info">
+
+    <div class="overlay-post" id="overlayPost">
+    <div class="content" id="postContent"></div>
+    <div class="close" id="close" >X</div>
+    </div> 
+       </div>
+    
+       <div class="add-post" id="add">+</div>
+       <div class="overlay-add" id="overlay-add">
+        <form action="" id="form-id">
+            <input type="text" name="title" id="title">
+            <button> პოსტის დამატება </button>
+        </form>
+       </div>
+       </div>
+    </section>
+
+
     
 
     <script src="fetch.js"></script>
