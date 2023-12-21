@@ -180,6 +180,8 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  color: white;
+  
 }
 
 .slider-wraper {
@@ -188,10 +190,15 @@ img {
 
 .arrow-left {
   left: 30px;
+  background-color: rgb(72, 72, 72);
+  border: none;
+
 }
 
 .arrow-right {
   right: 30px;
+  background-color: rgb(72, 72, 72);
+  border: none;
 }
 
 /* dots styles */
@@ -201,15 +208,21 @@ img {
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
+  
 }
 
 .dot-item {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(72, 72, 72);
+  border: 3px solid white;
   border-radius: 50%;
   margin: 10px;
   cursor: pointer;
+}
+
+.dot-item:hover{
+  background-color: white;
 }
 
 .bg-image {
@@ -410,39 +423,186 @@ img {
 
 /* albums */
 
-.homepage_latest_products_section_div {
+.musicSECTION {
 
-    
+    width: 90%;
+    margin:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 160px 1%;
-    background-color: #ecd1b5;
+    background-color: rgba(60, 55, 55, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 20PX;
+ 
 
 }
 
-.homepage_latest_products_p {
-    color: #402101;
+.musicSECTION_p {
+    color: #c31db8;
     font-family: 'Inter', sans-serif;
-    font-size: 40px;
+    border: 5px solid #310828;
+    padding: 20px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 100px;
+    
 
 }
 
-.homepage_latest_products_images_div {
+.musicSORT_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicSORT {
+  margin-top: 50PX;
     width: 95%;
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+   
 
 
 
 }
 
+.musicSECTIONtitle{
+  width: 30%;
+  background-color: #646264;
+  text-align: center;
+  padding: 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: white;
+  
+}
+
+.musicSECTIONtitle_h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.musicSECTIONtitle_p{
+  font-size: 10px;
+}
+
+.musicSECTION_img_div{
+  width: 60%;
+  background-color: #646264;
+  padding: 20px;
+
+}
+
+.musicSECTION_img{
+  
+  width: 400px;
+  height: 500px;
+  border-radius: 20PX;
+}
+
+.wrapper{
+  position: fixed;
+  
+  top: 700px;
+  left: 850px;
+  transform: translate(-50%, -50%);
+}
+
+.musicSECTIONBTN{
+  font-size: 50px;
+  height: 100px;
+border: 5px solid #310828;
+letter-spacing: 2px;
+text-align: center;
+position: relative;
+transition: all .35s;
+padding: 16px;
+border-radius: 15px;
+color: white;
+
+
+}
+
+.musicSECTIONBTN span{
+  position: relative;
+  z-index: 2;
+}
+
+.musicSECTIONBTN:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+
+
+.musicSECTIONBTN:hover:after{
+  width: 100%;
+}
+
+/* accordion */
+
+.accordion-body {
+  
+  width: 60%;
+  font-size: 50px;
+  margin-top: 10px;
+  align-items: center;
+  
+  
+  
+ 
+}
+.accordion-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.accordion-title::before {
+  content:  "+";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%); 
+}
+.content {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  color: #b32b96;
+ 
+  font-size: 20px;
+  text-align: center;
+  
+  
+}
+.container-accor {
+  border: 5px solid #310828;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.container-accor.activeNew .content {
+  height: 750px;
+}
+.container-accor.activeNew .accordion-title::before{
+  content: " - ";
+}
+
+
+/* accordion */
 
 .latest_products_div1 {
     background-image: url("https://www.coldplay.com/wp/wp-content/uploads/2016/04/upup-1.jpg");
@@ -482,14 +642,14 @@ img {
 .homepage_latest_products_p:hover,
 .button_fa-angles-left:hover,
 .button_fa-angles-right:hover {
-    box-shadow: 10px 10px 5px brown;
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
     transform: scale(1.1);
 }
 
 
 
 .latest_products_p_cost {
-    color: #B53B1B;
+    color: #504e4d;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -514,14 +674,14 @@ img {
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: #B53B1B;
+    background-color: #444242;
 }
 
 .button_viewmore {
     
     padding: 15px 32px 14px 31px;
     border-radius: 10px;
-    background: #B53B1B;
+    background: #3f3d3d;
     color: #FFF;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -529,7 +689,7 @@ img {
     font-weight: 400;
     line-height: normal;
     border: none;
-    margin-top: 30px;
+    margin-top: 50px;
     
     
 }
@@ -539,50 +699,52 @@ img {
 
 .WORLD_TOUR_section {
 
+  background-color: rgba(60, 55, 55, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 20PX;
+
   
-  row-gap: 50px;
-  background-color: #78aea9;
+  border: 10px solid #310828;
+  row-gap: 30px;
+ 
   display: flex;
   flex-direction: column;
- 
   align-items: center;
   margin: 200px auto;
   border-radius: 20px;
-  backdrop-filter: blur (10px);
   width: 80%;
 }
 
 .WORLD_TOUR_h2 {
   position: relative;
   text-align: center;
-  color: #c393b9;
+  color: #c31db8;
   font-size: 100px;
 }
 
 .tour_btn {
   width: fit-content;
   margin: 3rem auto 1rem;
-  border: 0.1rem solid #7a5ccc;
+  border: 0.1rem solid #b32b96;
   border-radius: 1rem;
-  padding: 1rem 2.5rem;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  text-transform: uppercase;
+  padding: 20px;
+  /* transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); */
   background-color: transparent;
 }
 
-.tour_btn:hover {
-  border: #ffa2f3;
-}
 
 .tour_countries {
-  font-size: 1.4rem;
-  padding: 0.5rem 2.5rem;
+  font-size: 16px;
+  padding: 16px;
   margin: 0 0.5rem 1rem 0;
-  border: 0.1rem solid #7a5ccc;
-  border-radius: 1.4rem;
+  border: 5px solid #310828;
+  border-radius: 20px;
 }
 
+/* storeSection */
+
 .storeSection {
+  margin: 200px 0;
 }
 
 .storeSectionH2 {
@@ -607,8 +769,12 @@ img {
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
-  background-color: #78aea9;
+  backdrop-filter: blur(10px);
+  color: #b182ab;
+  border: 1px solid rgb(78, 101, 111);
   width: 35%;
+  padding: 10px;
+  
 }
 
 .artworks_cards_img {
@@ -617,24 +783,32 @@ img {
 }
 
 .artworks_cards_text {
-  color: #b53b1b;
+  color: #b182ab;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 10px 0;
+
+  
+}
+
+figcaption{
+ 
+  text-align: center;
 }
 
 .artworks_cards_div {
+
   display: flex;
   justify-content: space-between;
-  background-color: #5d12a3;
-  width: 100%;
+  
+  
 }
 
 .artworks_cards_p {
-  color: #402101;
+  color: #b182ab;
   font-family: "Inter", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -643,19 +817,22 @@ img {
 }
 
 .fa-cart-plus {
-  color: #402101;
+  color: #3a0734;
   font-size: 24px;
 }
 
 .artworks_cards_button {
   border: none;
   background-color: transparent;
-  color: #402101;
+  color: #b182ab;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.fa-cart-plus:hover{
+  color: #b182ab;
 }
 
 .storeBTN {
@@ -670,7 +847,8 @@ img {
 }
 
 .btnDiv {
-  background-color: #ffa2f3;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  width: 30%;
+  margin: auto;
 }
