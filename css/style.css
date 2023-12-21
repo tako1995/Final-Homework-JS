@@ -2,7 +2,7 @@
   max-width: 1920px;
   width: 100%;
   margin: auto;
-  border: 10px solid red;
+  border: 2px solid red;
   background-image: url("https://i.pinimg.com/originals/48/06/44/480644f775b73df64030458f5c04bf49.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,95 +240,23 @@ img {
 
 /* footer */
 
-.footer {
+footer {
+
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 100px;
+  background-color: #3a0734;
+ 
+  
 }
 
-.footer_title_div {
-  width: 31.5%;
-}
 
-.footer_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer_title_div_1 {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
-.footer_title_div_2 {
-  color: #d5906e;
-  font-family: "Inter", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.footer_title_div_1:hover,
-.footer_title_div_2:hover {
-  font-size: 42px;
-}
 
-.footer_left_side {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.footer_right_side {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
-.footer_left_side_p:hover,
-.fa-phone:hover,
-.fa-envelope:hover,
-.fa-location-dot:hover,
-.footer_contact_style_div:hover,
-.footer_contact_style:hover {
-  color: orange;
-}
 
-.footer_contact_style {
-  color: #fff;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
 
-.footer_socialmedia {
-  display: flex;
-  gap: 30px;
-  width: 24px;
-  height: 24px;
-}
 
 /* form styles */
 
@@ -851,4 +779,32 @@ figcaption{
   backdrop-filter: blur(10px);
   width: 30%;
   margin: auto;
+}
+
+
+/* filter */
+
+.filter-container{
+  background-color: #430614;
+  margin: 200px auto;
+  text-align: center;
+  width: 50%;
+  padding: 30px;
+  border: 10px solid ;
+  border-radius: 20px;
+  
+ 
+}
+
+.filter{
+  color: white;
+  font-size: 50px;
+  margin: 40px;
+
+}
+
+.user-filter-ul{
+  color: white;
+  font-size: 30px;
+  margin: 40px;
 }
