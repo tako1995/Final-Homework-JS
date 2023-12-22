@@ -45,13 +45,31 @@
 .line {
   width: 90%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(55, 159, 68);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition-property: all;
   transition: 0.3s ease-in-out;
+}
+
+.main_header_li{
+  color: white;
+}
+
+.nav-ul{
+  color: white;
+  background-color: #b182ab;
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  
+
 }
 
 .line1 {
@@ -76,33 +94,36 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+
+
 @media (max-width: 480px) {
-  .main_header_nav {
+  .nav-ul {
     display: none;
+    
   }
 
   .burger {
     display: block;
   }
 
-  /* .main_header {
-        flex-direction: column;
-    } */
-  .main_header_ul {
+  .nav-ul.activeNew {
+    position: absolute;
+      top:0;
+      left:0;
+      height: 200px;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: aqua;
+    width: 100% ;
+    
+    
   }
 
-  .navigation.navActive {
-    display: block;
-  }
 }
 
-.main_header_ul {
-  display: flex;
-  column-gap: 30px;
-  display: none;
-}
+
 
 .header_logo {
   height: 60px;
@@ -786,7 +807,7 @@ figcaption{
 
 .filter-container{
   background-color: #430614;
-  margin: 200px auto;
+  margin: 100px auto;
   text-align: center;
   width: 50%;
   padding: 30px;
