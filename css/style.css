@@ -32,11 +32,11 @@
 
 .burger {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 25px;
+  left:10px;
   color: white;
   font-size: 20px;
-  border: 2px solid red;
+  border: 2px solid rgb(154, 14, 84);
   width: 60px;
   height: 60px;
   display: none;
@@ -45,7 +45,7 @@
 .line {
   width: 90%;
   height: 2px;
-  background-color: rgb(55, 159, 68);
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,6 +97,17 @@
 
 
 @media (max-width: 480px) {
+
+.main_header{
+  height: 100px;
+  background-color: #310828;
+  backdrop-filter: blur (5px);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
   .nav-ul {
     display: none;
     
@@ -119,6 +130,15 @@
     width: 100% ;
     
     
+  }
+
+  .header_logo{
+    display: none;
+  
+  }
+  .slider-wraper{
+    display: none;
+
   }
 
 }
